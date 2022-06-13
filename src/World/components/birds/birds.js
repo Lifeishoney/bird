@@ -7,8 +7,8 @@ async function loadBirds() {
 
   const [parrotData, flamingoData, storkData] = await Promise.all([
     loader.loadAsync('/bird/assets/models/Parrot.glb'),
-    loader.loadAsync('/assets/models/Flamingo.glb'),
-    loader.loadAsync('/assets/models/Stork.glb'),
+    loader.loadAsync('/bird/assets/models/Flamingo.glb'),
+    loader.loadAsync('/bird/assets/models/Stork.glb'),
   ]);
 
   console.log('Squaaawk!', parrotData);
